@@ -1,0 +1,354 @@
+.body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #404040;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+
+
+/* navbar */
+.sidebar {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .9)), url(https://cdn.pixabay.com/photo/2014/04/02/19/06/quito-ecuador-308159_960_720.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+#content2 {
+    overflow: hidden;
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: white;
+}
+
+.openbtn {
+    background-color: #4E4E50;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.openbtn:hover {
+    background-color: #265077;
+    border-radius: 5px;
+    border-color: #265077;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    position:fixed;
+    top:0;
+    z-index:2;
+    width: 100%;
+}
+
+
+
+.bottom-border {
+    border-bottom: 1px groove #eee;
+}
+
+
+.sidebar-link {
+    transition: all .4s;
+}
+
+.sidebar-link:hover {
+    background-color: #4E4E50;
+    border-radius: 5px;
+}
+
+.current {
+    background-color: #265077;
+    border-radius: 7px;
+    box-shadow: 2px 5px 10px #111;
+    transition: all .3s;
+}
+
+.current:hover {
+    background-color: #374785;
+    border-radius: 7px;
+    box-shadow: 2px 5px 20px #111;
+    transform: translateY(-1px);
+}
+.card1{
+    margin-top: 400px;
+    margin-bottom: 400px;
+
+}
+
+.card-title1{
+    font-size: 100px;
+    color: white;
+
+}
+.card-text1{
+    font-size: 22px;
+    color: white;
+
+}
+
+.card-text2 {
+    font-size: 22px;
+
+}
+card-text3{
+    font-size: 18px;
+}
+.card-body-1{
+    height: 300px;
+}
+
+
+.CoverImage {
+    background-image: url('https://cdn.pixabay.com/photo/2017/03/24/08/43/quito-2170516_960_720.jpg');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.CoverImage:before {
+    content: "";
+    display: block;
+    padding-bottom: 50%;
+}
+
+.h5Ed{
+    font-size: 3.5em;
+    color:#ffffff
+}
+
+.dashImage{
+    color:white;
+    background: linear-gradient( 180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .6)), url(https://cdn.pixabay.com/photo/2014/04/02/19/06/quito-ecuador-308159_960_720.jpg);
+    background-position: center;
+    justify-items: center;
+
+}
+
+
+
+#main, #cover, #content2, #content3, #content4, #footer, #selcapa {
+    overflow: hidden;
+
+}
+.col-xs-6 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+
+}
+
+
+@media screen and (min-width: 817px) {
+
+    .col-ll-4 {
+        width: 33.33%;
+        float: left;
+        padding: 10px;
+    }
+}
+
+/*Vista dispositivos medianos*/
+@media screen and (min-width: 750px) and (max-width: 816px) {
+    .h5Ed {
+        font-size: 2.5em;
+        color: #ffffff
+    }
+
+    .card-title1{
+        font-size: 50px;
+        color: white;
+
+    }
+
+    .card-text1{
+        font-size: 20px;
+        color: white;
+
+    }
+
+    .card-text2{
+        font-size: 16px;
+    }
+    .card-text3{
+        font-size: 16px;
+    }
+    .card-body-1{
+        height: 100%;
+    }
+    .col-xs-6 {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+
+
+    }
+
+    .col-mm-6 {
+        width: 50%;
+        float: left;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .col-mm-12 {
+        width: 100%;
+        float: left;
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+/*Vista dispositivos pequeños*/
+@media screen and (max-width: 750px)  {
+    .h5Ed {
+        font-size: 2em;
+        color: #ffffff
+    }
+    .card1{
+        margin-top: 125px;
+        margin-bottom: 50px;
+
+    }
+
+    .card-title1{
+        font-size: 40px;
+        color: white;
+
+    }
+
+    .card-text1{
+        font-size: 20px;
+        color: white;
+
+    }
+    .card-text2{
+        font-size: 17px;
+    }
+    .card-text3{
+        font-size: 16px;
+    }
+    .card-body-1{
+        height: 100%;
+    }
+    .col-xs-6 {
+        float: left;
+        width: 100%;
+        padding: 10px;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .col-ss-12 {
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .col-md-10 {
+        width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+
+
+
+
+
+canvas{
+    width: 400px;
+    height:400px;
+    font-color:white;
+    border-width: 2px;
+    border-color: white;
+
+}
+.chart-container {
+      position: relative;
+      margin-left: 10px;
+      margin-right: 10px;
+      background: #404040;
+      font-color:white;
+      border-radius: 5px;
+      margin-top: 10px;
+      border-style: solid;
+      border-width: 2px;
+      border-color: white;
+      height:450px;
+
+
+
+
+  }
+
+
+
+.chart-container2 {
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #404040;
+    font-color:white;
+    border-radius: 5px;
+    margin-top: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
+    height:450px;
+
+
+
+
+}
